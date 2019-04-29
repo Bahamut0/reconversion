@@ -1,0 +1,97 @@
+<div id="dragon">
+    <h2 id="h2_rotate">
+			<span
+                    class="txt-rotate"
+                    data-period="1000"
+                    data-rotate='[ "Et si on jouait à un jeu ?", "Un jeu avec des dragons et des chevaliers...", "Un jeu avec des épées et des crocs?", "Un jeu pour les amateurs de frissons!", "Et si on jouait à Dragon Slayer ?" ]'></span>
+    </h2>
+    <button class="activationButton">Cliquez pour commencer la partie</button>
+    <button class="mancheButton display_none">Cliquez pour continuer la partie</button>
+
+    <div class="clear"></div>
+
+    <!--initialization-->
+    <div class="paraIni">
+        <p class="hiddenPara"> Vous jouez en niveau <span class="difficulte"></span><span class="levelDescription"></span></p>
+        <p class="hiddenPara">Vous commbattez avec <span class="arme"></span>.<span class="effetArme"></span></p>
+        <p class="hiddenPara">Vous possédez une <span class="armure"></span>.<span class="effetArmure"></span></p>
+    </div>
+
+    <!--looping-->
+    <div class="paraLooping">
+        <p>Le dragon possède <span class="hpDragon"></span> hp. Xéna en possède <span class="hpXena"></span>.</p>
+        <p class="hiddenPara" id="paraToBePushed" ><span class="winny"></span> a remporté cette manche en infligeant <span class="damageP"></span> points de dommage !</p>
+    </div>
+
+    <!--result-->
+    <p class="gameWinner"></p>
+    <p id="winner_img"></p>
+
+
+</div>
+<main class="main1child">
+    <section>
+        <h2>Mes applications</h2>
+
+        <div id="funny_slider" class="borderDiv">
+            <h3>Funny Slider</h3>
+            <figure>
+                <img src="<?php echo BASE_URL?>/img/funny_slider/question.png" alt="chien">
+                <figcaption class="tacenter"></figcaption>
+            </figure>
+
+            <div class="toggleHide">
+                <div id="slide_button">
+                    <button class="buttonLeft"><i class="fas fa-arrow-circle-left"></i></button>
+                    <button class="buttonPlay"><i class="fas fa-play"></i></button>
+                    <button class="buttonRight"><i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+                <button class="random">Random</button>
+            </div>
+            <button class="display marginAuto" id="toggleButton">Afficher/Cacher</button>
+        </div>
+
+        <div id="address_book" class="borderDiv">
+
+            <aside>
+                <a href="<?php echo route("portefolio"); ?>" class="aButton"><button class="deleteAll" type="button">Tout supprimer</button></a>
+                <nav class="navContact">
+
+                </nav>
+            </aside>
+
+            <div >
+                <h3>Carnet d'addresse</h3>
+                <form id="form_address_book">
+                    <a class="aButton"><button type="button" id="newContact">Nouveau contact</button></a>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="nom" required="required">
+                    <label for="firstname">Prénom</label>
+                    <input type="text" id="firstname" name="prenom" required>
+                    <label for="tel">Tel</label>
+                    <input type="tel" id="tel" name="tel">
+
+                    <a class="aButton"><button type="submit" id="envoi">Ajouter</button></a>
+                </form>
+                <section id="display_contact">
+
+                </section>
+            </div>
+        </div>
+
+        <div id="gif_generator" class="borderDiv">
+            <section>
+                <h3>Générateur de gifs</h3>
+                <form method="POST" id="giphy_form" class="label_gif">
+                    <label for="mot">Quel type de gif cherches-tu ?</label>
+                    <input type="text" name="word" id="word" value="" placeholder="Ecrivez un mot">
+                    <button type="button" id="gif_button">Rechercher</button>
+                </form>
+                <div id="gif"></div>
+
+            </section>
+        </div>
+
+    </section>
+
+</main>

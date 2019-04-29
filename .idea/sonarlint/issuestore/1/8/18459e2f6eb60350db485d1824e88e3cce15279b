@@ -1,0 +1,9 @@
+
+`javascript:UnusedVariableÏ":Remove the declaration of the unused 'winnerImg' variable.(ûÕç÷
+ejavascript:S2814À"HRename "winner" as this name is already used in declaration at line 166.(ø’’æ
+‹#javascript:NonEmptyCaseWithoutBreak–"VEnd this switch case with an unconditional break, continue, return or throw statement.(ªëÅŞúÿÿÿÿ
+jjavascript:S2814¶"HRename "winner" as this name is already used in declaration at line 166.( É÷°ûÿÿÿÿ
+‹#javascript:NonEmptyCaseWithoutBreak™"VEnd this switch case with an unconditional break, continue, return or throw statement.(úâúÿÿÿÿ
+‹#javascript:NonEmptyCaseWithoutBreakˆ"VEnd this switch case with an unconditional break, continue, return or throw statement.(ªëÅŞúÿÿÿÿ
+Yjavascript:S1854Ï"<Remove this useless assignment to local variable "winnerImg"(ûÕç÷
+‹#javascript:NonEmptyCaseWithoutBreakŠ"VEnd this switch case with an unconditional break, continue, return or throw statement.(úâúÿÿÿÿ
